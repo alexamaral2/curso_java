@@ -61,21 +61,59 @@ public class Condicionais {
 
 		// JAVA == JAVA (false) > java == java
 		System.out.println(str1.equalsIgnoreCase(str2));
-	
+
 		// 5 - if
 		int numero = 10;
-		
+
 		// baseado em uma comparação, eu executo algo
-		if(numero > 5) {
+		if (numero > 5) {
 			System.out.println("O númeor é maior que 5");
 		}
-		
+
 		// If com strings
 		String texto = "Teste";
-		
-		if(texto.equals("Teste")) {
+
+		if (texto.equals("Teste")) {
 			System.out.println("O texto é: Teste");
 		}
+
+		// 6 - else
+		int q = 17;
+
+		if (q > 10) {
+			System.out.println("Q é maior q 10");
+		} else {
+			System.out.println("Insira um número maior que 10!");
+		}
+
+		if (texto.equals("Teste2")) {
+			System.out.println("O texto é: Teste");
+		} else {
+			System.out.println("O texto não é igual");
+
+		}
+
+		// 7 - else if
+		double nota = 8.5;
+
+		if (nota == 10) {
+			System.out.println("Você tirou a nota máxima, parabéns!");
+		} else if (nota >= 9) {
+			System.out.println("Nota muito boa!");
+		} else if (nota >= 7) {
+			System.out.println("Acima da média");
+		} else {
+			System.out.println("Abaixo da média!");
+		}
+
+		int num = 5;
+
+		if (num > 3 && num < 5) {
+			System.out.println("Alguma coisa");
+		} else if (num == 5) {
+			System.out.println("Outra coisa aqui");
+		}
+
 	}
 
 }
