@@ -39,6 +39,76 @@ public class Exercicios {
 			System.out.println("Acesso negado.");
 		}
 		
+		// Exercicio 3
+		System.out.println("Digite um número: ");
+		
+		int numero = scanner.nextInt();
+		
+		// 12 / 2 = 6 -> resto 0;
+		// 13 / 2 = 6 -> resto 1;
+		
+		String resultado = "";
+		
+		if(numero % 2 == 0) {
+			resultado = "Par";
+		} else {
+			resultado = "Ímpar";
+		}
+		
+		System.out.println("o numero é: " + resultado);
+		
+		// Exercicio 4
+		System.out.println("Insira um número de 1 a 7 (referente ao dia da semana): ");
+		
+		int dia = scanner.nextInt();
+
+		switch (dia) {
+		case 1:
+		case 7:
+			System.out.println("Final de semana");
+			break;
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+			System.out.println("Dia de semana");
+			break;
+		default:
+			System.out.println("Numero inválido");
+			break;
+		}
+		
+		// Exercicio 5
+		System.out.println("Insira um número:");
+		
+		int n = scanner.nextInt();
+		
+		if (n >= 10 && n <= 20) {
+			System.out.println("Dentro do intervalo.");
+		} else {
+			System.out.println("Fora do intervalo.");
+		}
+		
+		// Exercicio 6
+		
+		System.out.println("Insira uma letra:");
+		
+		char letra = scanner.next().toLowerCase().charAt(0);
+		switch (letra) {
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+			System.out.println("Vogal");
+			break;
+		default:
+			System.out.println("Consoante");
+			break;
+		}
+			
+		
 		scanner.close();
 
 	}
