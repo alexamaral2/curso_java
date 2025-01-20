@@ -1,4 +1,4 @@
-package secao5;
+package secao4;
 
 public class OperadoresLogicos {
 
