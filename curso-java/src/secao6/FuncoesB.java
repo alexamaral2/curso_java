@@ -19,6 +19,10 @@ public class FuncoesB {
 		
 		verificarAutenticacao("admin", "senhaSegura");
 		System.out.println("Oi");
+		
+		// 8 - Documentação Função
+		System.out.println(calcularMedia(5, 6, 7));
+		
 	}
 
 	public static String verificarAcesso(int idade, boolean temCarteira, boolean temHistoricoNegativo) {
@@ -62,6 +66,19 @@ public class FuncoesB {
 
 		System.out.println("Autenticação bem sucedida!");
 
+	}
+	
+	/**
+	 * 
+	 *	Calcula a média de três números inteiros.
+	 *
+	 *	@param num1 O primeiro número/nota a ser enviado.
+	 *	@param num2 O segundo número/nota a ser enviado.
+	 *	@param num3 O terceiro número/nota a ser enviado.
+	 *	@return A média dos três números
+	 */
+	public static double calcularMedia(int num1, int num2, int num3) {
+		return (num1 + num2 + num3) / 3;
 	}
 
 }
