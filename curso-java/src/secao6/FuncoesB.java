@@ -1,9 +1,12 @@
 package secao6;
 
 public class FuncoesB {
+	
+	// Escopo global
+	static int globalVar = 20;
 
 	public static void main(String[] args) {
-
+		
 		// 5 - funções com condicionais
 		String r1 = verificarAcesso(19, true, true);
 		System.out.println(r1);
@@ -22,7 +25,24 @@ public class FuncoesB {
 		
 		// 8 - Documentação Função
 		System.out.println(calcularMedia(5, 6, 7));
+	
+		// 9 - escopos
 		
+		// escopo local
+		
+		int localVar = 10;
+		
+		if (true) {
+			System.out.println(localVar);
+		}
+		
+		System.out.println(globalVar);
+		
+		int testeFnEscopo = escopoLocal(localVar);
+		
+		System.out.println(testeFnEscopo);
+		
+		// {} => Geralmente delimitam o escopo
 	}
 
 	public static String verificarAcesso(int idade, boolean temCarteira, boolean temHistoricoNegativo) {
@@ -79,6 +99,15 @@ public class FuncoesB {
 	 */
 	public static double calcularMedia(int num1, int num2, int num3) {
 		return (num1 + num2 + num3) / 3;
+	}
+	
+	public static int escopoLocal(int a) {
+		System.out.println(globalVar);
+		System.out.println(a);
+		
+		int testeFuncao = 1;
+		
+		return testeFuncao;
 	}
 
 }
