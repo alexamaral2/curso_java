@@ -9,9 +9,13 @@ public class FuncoesC {
 
 		// 6 + 5 + 4 + 3 + 2 + 1 = 21
 		System.out.println(soma);
-
 		// Função Iterativa
 		System.out.println(somatorioIterativo(6));
+
+		// 13 - Method Overloading
+		System.out.println(soma(2, 4));
+		System.out.println(soma(2, 4, 6));
+		System.out.println(soma(2.2, 4.4));
 	}
 
 	public static int somaRecursiva(int n) {
@@ -28,5 +32,17 @@ public class FuncoesC {
 			soma += i;
 		}
 		return soma;
+	}
+	
+	public static int soma (int a, int b) {
+		return a + b;
+	}
+	
+	public static int soma(int a, int b, int c) {
+		return a + b + c;
+	}
+	
+	public static double soma(double a, double b) {
+		return a + b;
 	}
 }
