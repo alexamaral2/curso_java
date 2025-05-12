@@ -1,5 +1,8 @@
 package secao6;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class FuncoesC {
 
 	public static void main(String[] args) {
@@ -16,6 +19,15 @@ public class FuncoesC {
 		System.out.println(soma(2, 4));
 		System.out.println(soma(2, 4, 6));
 		System.out.println(soma(2.2, 4.4));
+		
+		// 14 - Função Anonima
+		Runnable tarefa = () -> System.out.println("Minha Função Anonima!");
+		tarefa.run();
+		
+		// (arg1, arg2) - {}
+		List<String> nomes = Arrays.asList("Ana", "Pedro", "Paulo");
+		
+		nomes.forEach(nome -> System.out.println(nome));
 	}
 
 	public static int somaRecursiva(int n) {
@@ -33,15 +45,15 @@ public class FuncoesC {
 		}
 		return soma;
 	}
-	
-	public static int soma (int a, int b) {
+
+	public static int soma(int a, int b) {
 		return a + b;
 	}
-	
+
 	public static int soma(int a, int b, int c) {
 		return a + b + c;
 	}
-	
+
 	public static double soma(double a, double b) {
 		return a + b;
 	}
