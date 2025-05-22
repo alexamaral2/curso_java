@@ -30,5 +30,11 @@ public class LoopsB {
                 System.out.println("i " + i + ", j " + j);
             }
         }
-    }
+        
+		// 9 - off by one
+
+		for (int i = 0; i <= 5; i++) {
+			System.out.println("I: " + i);
+		}
+	}
 }
